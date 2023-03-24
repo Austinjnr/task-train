@@ -4,7 +4,6 @@ import Register from './components/form/Register';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/navbar/Home';
 import Task from './components/navbar/Task';
-import AddNew from './components/navbar/AddNew';
 
 function App() {
   return (
@@ -18,9 +17,6 @@ function App() {
           </Route>
           <Route path="/Task" component={Task} exact>
             <Task />
-            <Route path="/Addnew" component={AddNew} exact>
-              <AddNew />
-            </Route>
           </Route>
         </Switch>
       </Router>

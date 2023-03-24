@@ -15,9 +15,6 @@ function Navbar() {
                     <Link to='/task' className="task">
                         <li>Task</li>
                     </Link>
-                    <Link to='/AddNew' className="addnew">
-                        <li>Add Task</li>
-                    </Link>
                 </ul>
             </nav>
         </div>

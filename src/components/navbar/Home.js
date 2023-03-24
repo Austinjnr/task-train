@@ -2,7 +2,7 @@ function Home() {
     return ( 
         <section>
             <div className="nav-container">
-                <h1>Home</h1>
+                <h1>Welcome</h1>
             </div>
         </section>
     );
