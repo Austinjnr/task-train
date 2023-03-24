@@ -1,3 +1,6 @@
+import React, {useState} from "react";
+import todoList from "./Todolist";
+
 function Task() {
 	const [task, settask] = useState("");
     const [items, setitems] = useState([]);
@@ -31,7 +34,7 @@ function Task() {
 			</div>
 			<ul>
        			 {items.map((item) => (
-          			<Task
+          			<todoList 
             			key={items.indexOf(item)}
             			id={items.indexOf(item)}
             			value={item}
