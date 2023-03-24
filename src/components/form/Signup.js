@@ -1,4 +1,4 @@
-function Signup() {
+function SignUp() {
     return ( 
         <section>
             <form>
@@ -22,4 +22,4 @@ function Signup() {
      );
 }
 
-export default Signup;
+export default SignUp;
