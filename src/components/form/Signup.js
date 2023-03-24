@@ -1,58 +1,28 @@
 import React, { useState } from "react";
 
-function SignUp(props) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
+export const SignUp = (props) => {
+    const [email, setEmail] = useState('');
+    const [pass, setPass] = useState('');
+    const [name, setName] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(email);
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(email);
+    }
 
-  return (
-    <section>
-      <form className="register-form" onSubmit={handleSubmit}>
-        <h3>Create an Account</h3>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">User Name</label>
-          <input
-            value={name}
-            name="name"
-            onChange={(e) => setName(e.target.value)}
-            id="name"
-            placeholder="Full Name"
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email address</label>
-          <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-            placeholder="youremail@gmail.com"
-            id="email"
-            name="email"
-          />
-        </div>
-        <div className="mb-3 form-check">
-          <label htmlFor="password" className="form-label">Password</label>
-          <input
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            placeholder="Password"
-            id="password"
-            name="password"
-          />
-        </div>
-        <button type="submit" className="btn btn-primary">Sign Up</button>
-        <button className="link-btn" onClick={() => props.onFormSwitch("login")}>
-          Already have an account? Login here.
-        </button>
-      </form>
-    </section>
-  );
+    return (
+        <div className="auth-form-container">
+            <h2>Create an Account</h2>
+        <form className="register-form" onSubmit={handleSubmit}>
+            <label htmlFor="name">Full name</label>
+            <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="full Name" />
+            <label htmlFor="email">email</label>
+            <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+            <label htmlFor="password">password</label>
+            <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
+            <button type="submit">Log In</button>
+            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
+        </form>
+    </div>
+    )
 }
-
-export default SignUp;
