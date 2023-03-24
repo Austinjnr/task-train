@@ -1,7 +1,7 @@
 function Home() {
     return ( 
         <section>
-            <div className="">
+            <div className="nav-container">
                 <h1>Home</h1>
             </div>
         </section>

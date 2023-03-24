@@ -1,8 +1,6 @@
 import React, { useState } from "react"
 import "./navbar.css"
 import { Link } from "react-router-dom"
-import { FaBars } from "react-icons/fa"
-import { ImCross } from "react-icons/im"
 
 function Navbar() {
     const [Navigation, setNavigation] = useState(false)
@@ -17,13 +15,10 @@ function Navbar() {
                     <Link to='/task' className="task">
                         <li>Task</li>
                     </Link>
-                    <Link to='/addnew' className="addnew">
+                    <Link to='/AddNew' className="addnew">
                         <li>Add Task</li>
                     </Link>
                 </ul>
-                <button className="mobile-menu-icon" onClick={() => setNavigation(!Navigation)}>
-                    {Navigation ? <ImCross/> : <FaBars/>}}
-                </button>
             </nav>
         </div>
      );
