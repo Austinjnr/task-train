@@ -1,9 +1,10 @@
 import './App.css';
+import Signin from './components/form/Sign-up';
 
 function App() {
-  return (
+  return (  
     <div>
-      
+      <Signin />
     </div>
   );
 }
