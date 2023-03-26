@@ -1,7 +1,7 @@
 function Todos() {
     return ( 
-        <section>
-            
+        <section className='nav-text'>
+            <h1>Todos</h1>
         </section>
      );
 }

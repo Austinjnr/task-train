@@ -1,7 +1,7 @@
 function New() {
     return (  
-        <section>
-            
+        <section className='nav-text'>
+            <h1>New</h1>
         </section>
     );
 }
