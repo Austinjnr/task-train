@@ -8,7 +8,7 @@ export const Register = (props) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {name, email, pass};
-        const response = await fetch('http://localhost:3001/users/register', {
+        const response = await fetch('/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
