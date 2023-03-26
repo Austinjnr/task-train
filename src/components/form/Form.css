@@ -11,6 +11,9 @@
   .auth-form-container, .login-form, .register-form {
     display: flex;
     flex-direction: column;
+    background-color: #000;
+    border-radius: 1rem;
+    margin: 1rem;
   }
 label {
     text-align: left;
