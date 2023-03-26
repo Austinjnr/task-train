@@ -1,9 +1,11 @@
-function Register() {
+import './Form';
+
+function Signin() {
     return (  
         <section>
-            
+
         </section>
     );
 }
 
-export default Register;
+export default Signin;
