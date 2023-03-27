@@ -1,0 +1,19 @@
+{
+"todos": [
+    {
+        "title": "Clean", 
+        "body": "washing cloths, removing dishes from the dishwasher, dusting house", 
+        "id": 1
+    },
+    {
+        "title": "Shopping", 
+        "body": "grocery shopping and cutlary window shopping", 
+        "id": 2
+    },
+    {
+        "title": "Study", 
+        "body": "go through react, pratice algorithm and data structures", 
+        "id": 3
+    }
+    ]
+}
