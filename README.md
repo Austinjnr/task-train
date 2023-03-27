@@ -1,6 +1,6 @@
 # TaskTrain
 
-This a mini-web application of a simple todo list, <a href="https://covid-19-tracker-db3rv2t8v-austinjnr.vercel.app/">here is the live link.</a>
+This a mini-web application of a simple todo list, <a href="">here is the live link.</a>
 
 ## Tech stack
 
