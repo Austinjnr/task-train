@@ -14,7 +14,8 @@ The following technology stacks were used in the production of the application:
 
 ## Description
 
-This is a front-end application that enables one to handle there time. It enebles one to;
+- This is a front-end application that enables one to manage there activities. 
+- You will be able to;
     List all your Todos
     Update your Tasks
     Delete your Tasks
