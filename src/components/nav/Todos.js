@@ -1,32 +1,10 @@
 import React, {useState, useEffect} from "react";
 import TodoList from "../TodoList"
+import useFetch from "../usefetch";
 
 function Todos() {
 
-    const [todos, setTodos] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() =>{
-        setTimeout(() =>{
-            fetch('http://localhost:8000/todos')
-        .then(res => {
-            if (!res.ok){
-                throw Error('could not fetch the data from that server');
-            }
-            return res.json()
-        })
-        .then((data => {
-            setTodos(data);
-            setLoading(false);
-            setError(null);
-        }))
-        .catch(err => {
-           setError(err.message);
-           setLoading(false);
-        })
-        }, 1000);
-    }, []); 
+    const {data: todos, loading, error} = useFetch('http://localhost:8000/todos')
 
     return ( 
         <section className='nav-text'>
