@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { withRouter } from "react-router-dom"; // import withRouter
 
-export const Login = (props) => {
+export const Login = withRouter((props) => { // wrap component with withRouter
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
@@ -19,6 +20,7 @@ export const Login = (props) => {
       .then((res) => res.json())
       .then((data) => {
         props(data.email);
+        props.history.push("../nav/Navigation"); 
       });
   };
 
@@ -44,7 +46,7 @@ export const Login = (props) => {
           id="password"
           name="password"
         />
-        <button type="submit">Log In</button>
+        <button className="login-btn" type="submit">Log In</button>
       </form>
       <button
         className="link-btn"
@@ -54,4 +56,4 @@ export const Login = (props) => {
       </button>
     </div>
   );
-};
+});

@@ -3,7 +3,7 @@ import './Form.css';
 import { Login } from './Login';
 import { Register } from './Register';
 
-function Signin(props) {
+function Signin() {
     const [currentForm, setCurrentForm] = useState('login');
 
     const toggleForm = (formName) => {
