@@ -25,12 +25,12 @@ To use this rep on your machine, requires some simple steps:
 - Open a terminal/ command line interface on your computer
 - Clone the repo by;
 
-        git clone 
+        git clone git@github.com:Austinjnr/task-train.git
 
 - Once it creates a copy on your local machine for you.
 - Change directory to the repo folder:
 
-        cd 
+        cd task-train
 
 - Open it in ``Visual Studio Code``
 
