@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
+
 const Create = () => {
 
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [status, setStatus] = useState('');
     const [isPending, setIsPending] = useState(false);
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,6 +24,7 @@ const Create = () => {
         }).then(()=>{
             console.log('new task added successfully')
             setIsPending(false)
+            history.push('/todos')
         })
     }
 
@@ -53,9 +57,6 @@ const Create = () => {
                 </select>
                 { !isPending && <button>Add Task</button> }
                 { isPending && <button disabled>Adding ....</button>}
-                <p>{title}</p>
-                <p>{body}</p>
-                <p>{status}</p>
             </form>
         </div>
     );
