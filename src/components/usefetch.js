@@ -1,3 +1,4 @@
+import { cleanup } from "@testing-library/react";
 import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
@@ -7,8 +8,11 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() =>{
+
+        const abortCont = new AbortController();
+
         setTimeout(() =>{
-            fetch(url)
+            fetch(url, {single: abortCont.single})
         .then(res => {
             if (!res.ok){
                 throw Error('could not fetch data from that server');
@@ -21,10 +25,15 @@ const useFetch = (url) => {
             setError(null);
         }))
         .catch(err => {
+            if (err.name === 'AbortError') {
+                console.log('fetch aborted')
+            } else{
            setError(err.message);
            setLoading(false);
+        }
         })
         }, 1000);
+        return () => abortCont.abort();
     }, [url]); 
     return { data, loading, error };
 }

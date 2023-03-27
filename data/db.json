@@ -1,19 +1,46 @@
 {
-"todos": [
+  "todos": [
     {
-        "title": "Clean", 
-        "body": "washing cloths, removing dishes from the dishwasher, dusting house", 
-        "id": 1
+      "title": "Clean",
+      "body": "washing cloths, removing dishes from the dishwasher, dusting house",
+      "status": "HIGH",
+      "id": 1
     },
     {
-        "title": "Shopping", 
-        "body": "grocery shopping and cutlary window shopping", 
-        "id": 2
+      "title": "Shopping",
+      "body": "grocery shopping and cutlary window shopping",
+      "status": "LOW",
+      "id": 2
     },
     {
-        "title": "Study", 
-        "body": "go through react, pratice algorithm and data structures", 
-        "id": 3
+      "title": "Study",
+      "body": "go through react, pratice algorithm and data structures",
+      "status": "HIGH",
+      "id": 3
+    },
+    {
+      "title": "ds",
+      "body": "sdxz",
+      "status": "MEDIUM",
+      "id": 4
+    },
+    {
+      "title": "vh",
+      "body": "bjlh",
+      "status": "",
+      "id": 5
+    },
+    {
+      "title": "vh",
+      "body": "bjlh",
+      "status": "",
+      "id": 6
+    },
+    {
+      "title": "vh",
+      "body": "bjlh",
+      "status": "",
+      "id": 7
     }
-    ]
+  ]
 }
