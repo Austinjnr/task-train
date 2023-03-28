@@ -15,7 +15,7 @@ const Create = () => {
 
         setIsPending(true)
 
-        fetch('https://api.npoint.io/ec5f40ac50743ede4ff2',{
+        fetch('http://localhost:8000/todos',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -53,7 +53,7 @@ const Create = () => {
                 >
                     <option value='LOW'>LOW</option>
                     <option value='MEDIUM'>MEDIUM</option>
-                    <option value='MEDIUM'>HIGH</option>
+                    <option value='HIGH'>HIGH</option>
                 </select>
                 { !isPending && <button>Add Task</button> }
                 { isPending && <button disabled>Adding ....</button>}
