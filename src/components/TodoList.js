@@ -1,7 +1,7 @@
 const TodoList = ({todos, pgReload}) => {
 
     const handleDelete = (todoId) => {
-        fetch('http://localhost:8000/todos/' + todoId, {
+        fetch(' https://api.npoint.io/ec5f40ac50743ede4ff2' + todoId, {
             method: 'DELETE',
         }).then(() => {
             console.log('Task Deleted');

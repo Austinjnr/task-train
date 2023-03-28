@@ -15,7 +15,7 @@ const Create = () => {
 
         setIsPending(true)
 
-        fetch('http://localhost:8000/todos',{
+        fetch('https://api.npoint.io/ec5f40ac50743ede4ff2',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

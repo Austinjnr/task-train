@@ -3,7 +3,7 @@ import useFetch from "../usefetch";
 
 function Todos() {
 
-    const {data: todos, loading, error} = useFetch('http://localhost:8000/todos')
+    const {data: todos, loading, error} = useFetch(' https://api.npoint.io/ec5f40ac50743ede4ff2')
 
     return ( 
         <section className='nav-text'>
